@@ -16,3 +16,7 @@ WHERE NOT EXISTS(SELECT *
                        fl.CI=be.CI AND 
                        fs.CodFS=fl.CodFS));
 
+-- 10. Los bebedores que frecuentan alguna fuente de soda que sirve al menos una 
+-- bebida que les guste
+SELECT DISTINCT CI, Nombre
+FROM BEBEDOR NATURAL JOIN FRECUENTA NATURAL JOIN VENDE NATURAL JOIN GUSTA;
