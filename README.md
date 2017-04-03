@@ -5,7 +5,7 @@ Base de Datos para la Guía de Bebedores en la materia CI3311 de la Universidad 
 El objetivo del repositorio es proveer la base de datos de la guía de Bebedores
 para la comprobación de soluciones planteadas.
 
-Adicionalmente, se provee un archivo con soluciones propuestas de
+Adicionalmente, se provee un archivo con soluciones propuestas de los problemas.
 
 **Es posible contribuir a este repositorio de las siguientes formas:**
 
@@ -14,3 +14,7 @@ Adicionalmente, se provee un archivo con soluciones propuestas de
 * Aportando soluciones a los diferentes problemas planteados en el PDF en el archivo bebSolutions.sql
 
 También planteando soluciones alternativas o notificando mejoras o errores en las soluciones ya propuestas.
+
+###### Créditos de las soluciones
+@davideluque
+@815edwar
