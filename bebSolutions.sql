@@ -1,3 +1,18 @@
+/*
+ * Archivo de soluciones a la guía de Ejercicios de Álgebra y Cálculo Relacional
+ * mejor conocida como guía de Bebedores de la Universidad Simón Bolívar para la
+ * materia CI3311 "Sistemas de Bases de Datos"
+ *
+ * Si te gustaría contribuir con una solución, hazlo siguiendo el estilo de
+ * "How to Contribute to Open Source" Sección 5 apartado Opening a pull request
+ * https://opensource.guide/how-to-contribute/#how-to-submit-a-contribution
+ *
+ * Si encuentras algún error que no sabes como resolver puedes seguir el estilo
+ * del apartado Opening an issue en la guía antes mencionada.
+ *
+ * Las soluciones alternativas son admitidas.
+*/
+
 -- 1. Bebedores que no les gusta la malta
 SELECT *
 FROM BEBEDOR b
@@ -49,6 +64,19 @@ WHERE EXISTS (SELECT *
       NOT EXISTS (SELECT *
                   FROM gusta NATURAL JOIN bebida
                   WHERE b.ci = ci AND nombrebeb = 'Coca-Cola');
+
+-- 6. Los bebedores que no les gusta las bebidas que le gusta a Luis Pérez
+-- Plantear una solucion alternativa usando existenciales
+SELECT ci, nombre
+FROM bebedor b NATURAL JOIN gusta g
+
+EXCEPT
+
+SELECT ci, nombre
+FROM bebedor NATURAL JOIN gusta
+WHERE CodBeb IN (SELECT CodBeb
+                  FROM bebedor NATURAL JOIN gusta
+                  WHERE Nombre = 'Luis Perez');
 
 -- 10. Los bebedores que frecuentan alguna fuente de soda que sirve al menos una
 --     bebida que les guste
