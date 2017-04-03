@@ -1,4 +1,4 @@
-/*
+ /*
  * Archivo de soluciones a la guía de Ejercicios de Álgebra y Cálculo Relacional
  * mejor conocida como guía de Bebedores de la Universidad Simón Bolívar para la
  * materia CI3311 "Sistemas de Bases de Datos"
